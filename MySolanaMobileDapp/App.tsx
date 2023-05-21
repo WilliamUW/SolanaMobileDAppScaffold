@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import WebView from 'react-native-webview';
 
 import {
   Colors,
@@ -71,25 +72,19 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+          <WebView
+            scalesPageToFit={true}
+            bounces={false}
+            javaScriptEnabled
+            style={{height: 500, width: 300}}
+            source={{html: `<iframe width="100%" height="100%" src="https://creator.voiceflow.com/prototype/64669b92bf42a20007b01df5" frameborder="0"></iframe>`
+            }}
+            automaticallyAdjustContentInsets={false}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -10,8 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "@solana-mobile/mobile-wallet-adapter-protocol": "^2.0.0",
+    "@solana-mobile/mobile-wallet-adapter-protocol-web3js": "^2.0.0",
+    "@solana/wallet-adapter-react": "^0.15.32",
+    "@solana/web3.js": "^1.76.0",
+    "buffer": "^6.0.3",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "react-native-get-random-values": "^1.9.0",
+    "react-native-webview": "^12.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
