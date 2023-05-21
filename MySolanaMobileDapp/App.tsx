@@ -80,7 +80,7 @@ function App(): JSX.Element {
             scalesPageToFit={true}
             bounces={false}
             javaScriptEnabled
-            style={{height: 500, width: 300}}
+            style={{height: 710, width: '100%'}}
             source={{html: `<iframe width="100%" height="100%" src="https://creator.voiceflow.com/prototype/64669b92bf42a20007b01df5" frameborder="0"></iframe>`
             }}
             automaticallyAdjustContentInsets={false}
